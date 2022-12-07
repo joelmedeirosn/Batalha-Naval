@@ -6,5 +6,4 @@ public class Atacar {
 
     private String Tiro;
     private String Agua;
-    private int canhao;
 }
