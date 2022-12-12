@@ -1,10 +1,9 @@
-package com.example.batalhanaval;
+package com.example.batalhanaval.model;
 
-public class Main {
+public class Teste {
     public static void main(String[] args){
         Tabuleiro tabuleiro = new Tabuleiro();
         tabuleiro.teste();
-
 
     }
 }

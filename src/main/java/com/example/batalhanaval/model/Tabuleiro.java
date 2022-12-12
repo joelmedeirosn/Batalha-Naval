@@ -1,4 +1,4 @@
-package com.example.batalhanaval;
+package com.example.batalhanaval.model;
 
 public class Tabuleiro {
     private char[][] dimensoes = new char[10][10];
