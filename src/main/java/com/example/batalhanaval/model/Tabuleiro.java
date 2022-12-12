@@ -10,7 +10,6 @@ public class Tabuleiro {
             }
             System.out.println();
         }
-
     }
     private int[][] posicaoDefesa;
 

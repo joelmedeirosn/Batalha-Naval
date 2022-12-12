@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05f37349-1d9c-487c-afda-7da1fcd81c1a" name="Changes" comment="começando a interface, setando o formato inicial dos navios">
+    <list default="true" id="05f37349-1d9c-487c-afda-7da1fcd81c1a" name="Changes" comment="começando métodos">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/controller/JogarController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/batalhanaval/view/Jogar.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/model/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/model/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/MainGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/MainGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/controller/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/controller/MenuController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/model/Tabuleiro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/model/Tabuleiro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/model/Teste.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/model/Teste.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/batalhanaval/view/menu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/batalhanaval/view/Menu.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +22,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Class" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -53,7 +57,7 @@
       <recent name="C:\Users\Natan\Documents\ECOMP\4° PERIODO\LPOO redenção\Batalha-Naval\src\model" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Teste">
+  <component name="RunManager" selected="Application.MainGame">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.batalhanaval.HelloApplication" />
       <module name="Batalha-Naval" />
@@ -95,8 +99,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Teste" />
         <item itemvalue="Application.MainGame" />
+        <item itemvalue="Application.Teste" />
       </list>
     </recent_temporary>
   </component>
@@ -144,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670804277834</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="começando métodos">
+      <created>1670857162278</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1670857162278</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -162,7 +173,8 @@
     <MESSAGE value="Initial commit - inicialização da interface, primeiras classes e atributos" />
     <MESSAGE value="ahr" />
     <MESSAGE value="começando a interface, setando o formato inicial dos navios" />
-    <option name="LAST_COMMIT_MESSAGE" value="começando a interface, setando o formato inicial dos navios" />
+    <MESSAGE value="começando métodos" />
+    <option name="LAST_COMMIT_MESSAGE" value="começando métodos" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

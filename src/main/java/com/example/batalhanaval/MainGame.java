@@ -10,7 +10,7 @@ import java.io.IOException;
 public class MainGame extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(MainGame.class.getResource("view/menu.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(MainGame.class.getResource("view/Menu.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("Batalha Naval 🚢");
         stage.setScene(scene);
