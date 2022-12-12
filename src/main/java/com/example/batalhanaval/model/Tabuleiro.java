@@ -14,6 +14,14 @@ public class Tabuleiro {
     }
     private int[][] posicaoDefesa;
 
+    public void defender(){
+
+    }
+
+    public void atacar(){
+
+    }
+
     private int[][] posicaoAtaque;
 
     private Navios[][] navios;

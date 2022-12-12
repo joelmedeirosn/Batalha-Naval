@@ -4,21 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05f37349-1d9c-487c-afda-7da1fcd81c1a" name="Changes" comment="ahr">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/controller/MenuController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/batalhanaval/view/HelloView.css" afterDir="false" />
+    <list default="true" id="05f37349-1d9c-487c-afda-7da1fcd81c1a" name="Changes" comment="começando a interface, setando o formato inicial dos navios">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/Atacar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/model/Atacar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/MainGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/model/Teste.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/Navios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/model/Navios.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/model/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/Tabuleiro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/model/Tabuleiro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/batalhanaval/hello-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/model/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/model/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/model/Tabuleiro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/model/Tabuleiro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/model/Teste.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/model/Teste.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,15 +37,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/Natan/Documents/ECOMP/4° PERIODO/LPOO redenção/Batalha-Naval/src/main/resources/com/example/batalhanaval/hello-view.fxml",
-    "settings.editor.selected.configurable": "preferences.JavaFX"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Natan/Documents/ECOMP/4° PERIODO/LPOO redenção/Batalha-Naval/src/main/resources/com/example/batalhanaval/hello-view.fxml&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.JavaFX&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Natan\Documents\ECOMP\4° PERIODO\LPOO redenção\Batalha-Naval\src\main\resources\com\example\batalhanaval\view" />
@@ -63,7 +53,7 @@
       <recent name="C:\Users\Natan\Documents\ECOMP\4° PERIODO\LPOO redenção\Batalha-Naval\src\model" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MainGame">
+  <component name="RunManager" selected="Application.Teste">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.batalhanaval.HelloApplication" />
       <module name="Batalha-Naval" />
@@ -90,10 +80,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Teste" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.batalhanaval.model.Teste" />
+      <module name="Batalha-Naval" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.batalhanaval.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Teste" />
         <item itemvalue="Application.MainGame" />
-        <item itemvalue="Application.com.example.batalhanaval.HelloApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -127,7 +130,21 @@
       <option name="project" value="LOCAL" />
       <updated>1670449439730</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="começando a interface, setando o formato inicial dos navios">
+      <created>1670804199425</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1670804199425</updated>
+    </task>
+    <task id="LOCAL-00005" summary="começando a interface, setando o formato inicial dos navios">
+      <created>1670804277834</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1670804277834</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -144,7 +161,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit - inicialização da interface, primeiras classes e atributos" />
     <MESSAGE value="ahr" />
-    <option name="LAST_COMMIT_MESSAGE" value="ahr" />
+    <MESSAGE value="começando a interface, setando o formato inicial dos navios" />
+    <option name="LAST_COMMIT_MESSAGE" value="começando a interface, setando o formato inicial dos navios" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
