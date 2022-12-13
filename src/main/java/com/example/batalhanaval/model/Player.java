@@ -10,7 +10,7 @@ public class Player {
         System.out.println("Digite seu nome");
         playerName = input.nextLine();
 
-        if (playerName.length()<=2 || playerName.length()>=16){
+        while (playerName.length()<=2 || playerName.length()>=16){
             System.out.println("Digite um nome entre 3 e 15 caracteres.");
             playerName = input.nextLine();
         }
