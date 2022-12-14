@@ -2,6 +2,14 @@ package com.example.batalhanaval.model;
 
 public class Tabuleiro {
     private char[][] dimensoes = new char[10][10];
+    private int[][] posicaoDefesa;
+    private int[][] posicaoAtaque;
+
+    private Navios[][] navios;
+
+    public Tabuleiro() {
+        this.dimensoes = dimensoes;
+    }
 
     public void teste(){
         for(int i=0;i<dimensoes.length; i++){
@@ -11,7 +19,7 @@ public class Tabuleiro {
             System.out.println();
         }
     }
-    private int[][] posicaoDefesa;
+
 
     public void defender(){
 
@@ -21,14 +29,7 @@ public class Tabuleiro {
 
     }
 
-    private int[][] posicaoAtaque;
 
-    private Navios[][] navios;
-
-
-    public Tabuleiro() {
-        this.dimensoes = dimensoes;
-    }
 
     public int[][] getPosicaoDefesa() {
         return posicaoDefesa;

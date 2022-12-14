@@ -1,0 +1,21 @@
+.root{
+
+
+}
+
+body{
+
+    background-image:url("Menu3.jpg");
+
+
+}
+
+.label{
+    -fx-alignment: center;
+
+}
+
+#title{
+    -fx-text-fill: "black";
+
+}
