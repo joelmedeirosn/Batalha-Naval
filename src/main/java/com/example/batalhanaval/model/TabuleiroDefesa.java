@@ -1,13 +1,13 @@
 package com.example.batalhanaval.model;
 
-public class Tabuleiro {
+public class TabuleiroDefesa {
     private char[][] dimensoes = new char[10][10];
     private int[][] posicaoDefesa;
-    private int[][] posicaoAtaque;
+
 
     private Navios[][] navios;
 
-    public Tabuleiro() { this.dimensoes = dimensoes; }
+    public TabuleiroDefesa() { this.dimensoes = dimensoes; }
 
     public void teste(){
         for(int i=0;i<dimensoes.length; i++){
@@ -23,11 +23,6 @@ public class Tabuleiro {
 
     }
 
-    public void atacar(){
-
-    }
-
-
 
     public int[][] getPosicaoDefesa() {
         return posicaoDefesa;
@@ -37,10 +32,5 @@ public class Tabuleiro {
         this.posicaoDefesa = posicaoDefesa;
     }
 
-    public int[][] getPosicaoAtaque() {
-        return posicaoAtaque;
-    }
 
-    public void setPosicaoAtaque(int[][] posicaoAtaque) {
-        this.posicaoAtaque = posicaoAtaque;}
 }

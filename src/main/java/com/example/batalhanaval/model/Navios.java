@@ -7,7 +7,7 @@ public class Navios {
         for (i=0;i<=2;i++){
             for(j=0;j<=2;j++){
                 if(i==0 || i>=1 && i<=2 && j==1){
-                    System.out.print("*");
+                    System.out.print("P");
 
                 } else{
                     System.out.print(" ");
@@ -21,22 +21,22 @@ public class Navios {
     }
     public int navio4Canos(){
         for(int i=1;i<5;i++){
-            System.out.println("*");
+            System.out.println("N");
         }return 0;
     }
 
     public int navio3Canos(){
         for(int i=1;i<4;i++){
-            System.out.println("*");
+            System.out.println("N");
         }return 0;
     }
     public int navio2Canos(){
         for(int i=1;i<3;i++){
-            System.out.println("*");
+            System.out.println("N");
         }return 0;
     }
     public int navio1Cano(){
-        System.out.println("*");
+        System.out.println("N");
         return 0;
     }
     private int quantAvioes=1;
