@@ -23,7 +23,9 @@ public class Tabuleiro {
 
     }
 
-    public void atacar(){}
+    public void atacar(){
+        int a;
+    }
 
 
 
