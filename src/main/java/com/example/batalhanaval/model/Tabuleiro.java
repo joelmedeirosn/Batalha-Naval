@@ -24,7 +24,7 @@ public class Tabuleiro {
     }
 
     public void atacar(){
-        int a;
+
     }
 
 
