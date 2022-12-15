@@ -7,9 +7,7 @@ public class Tabuleiro {
 
     private Navios[][] navios;
 
-    public Tabuleiro() {
-        this.dimensoes = dimensoes;
-    }
+    public Tabuleiro() { this.dimensoes = dimensoes; }
 
     public void teste(){
         for(int i=0;i<dimensoes.length; i++){
@@ -25,9 +23,7 @@ public class Tabuleiro {
 
     }
 
-    public void atacar(){
-
-    }
+    public void atacar(){}
 
 
 
