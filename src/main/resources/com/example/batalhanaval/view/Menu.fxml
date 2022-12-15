@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
@@ -7,26 +8,30 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="scenePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="bodybg" stylesheets="@Menu.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.batalhanaval.controller.MenuController">
+<AnchorPane fx:id="scenePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" styleClass="bodybg" stylesheets="@Menu.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.batalhanaval.controller.MenuController">
    <children>
-      <ImageView fx:id="img3" fitHeight="612.0" fitWidth="634.0" layoutX="-6.0" layoutY="-59.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="607.0" fitWidth="968.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@imagens/Menu3.jpg" />
+            <Image url="@imagens/Menu5.jpg" />
          </image>
       </ImageView>
-      <Label fx:id="title" layoutY="41.0" prefHeight="95.0" prefWidth="600.0" stylesheets="@Menu.css" text="BATALHA NAVAL">
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+      <Label fx:id="titulo" alignment="CENTER" layoutX="219.0" layoutY="68.0" prefHeight="65.0" prefWidth="471.0" style="-fx-background-color: #0085ff;" stylesheets="@Menu.css" text="BATALHA NAVAL">
          <font>
-            <Font name="System Bold Italic" size="33.0" />
-         </font></Label>
-      <Button fx:id="jogar" layoutX="221.0" layoutY="136.0" mnemonicParsing="false" onAction="#switchToJogar" prefHeight="67.0" prefWidth="162.0" text="Jogar">
+            <Font name="Bodoni MT Black" size="40.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></Label>
+      <Button fx:id="jogar" layoutX="368.0" layoutY="200.0" mnemonicParsing="false" onAction="#switchToJogar" prefHeight="65.0" prefWidth="162.0" text="Jogar">
          <font>
             <Font name="System Bold" size="30.0" />
          </font></Button>
-      <Button fx:id="sair" layoutX="221.0" layoutY="294.0" mnemonicParsing="false" onAction="#sairTelaAction" prefHeight="65.0" prefWidth="162.0" text="Sair">
+      <Button fx:id="sair" layoutX="369.0" layoutY="403.0" mnemonicParsing="false" onAction="#sairTelaAction" prefHeight="65.0" prefWidth="162.0" text="Sair">
          <font>
             <Font name="System Bold" size="30.0" />
          </font></Button>
-      <Button fx:id="ranking" layoutX="221.0" layoutY="214.0" mnemonicParsing="false" onAction="#onRankingAction" prefHeight="65.0" prefWidth="162.0" text="Ranking">
+      <Button fx:id="ranking" layoutX="368.0" layoutY="300.0" mnemonicParsing="false" onAction="#onRankingAction" prefHeight="65.0" prefWidth="162.0" text="Ranking">
          <font>
             <Font name="System Bold" size="30.0" />
          </font>

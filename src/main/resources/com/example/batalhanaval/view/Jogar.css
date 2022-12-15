@@ -1,5 +1,40 @@
 body{
 
-    background-image:url("Menu3.jpg");
+    background-image:url("Menu5.jpg");
 
 }
+.label{
+    -fx-alignment: center;
+
+}
+
+#title{
+    -fx-text-fill: "black";
+
+}
+
+.button{
+    -fx-background-color: #239c9c;
+
+}
+
+.button:hover{
+    -fx-background-color: #07f7f7;
+
+}
+
+.button:pressed{
+    -fx-background-color:#239c9c;
+
+}
+
+.inputBox{
+
+
+}
+
+.inputBox input{
+
+
+}
+

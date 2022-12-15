@@ -10,6 +10,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
+import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
@@ -26,6 +27,9 @@ public class MenuController {
 
     @FXML
     private AnchorPane scenePane;
+    @FXML
+    Label titulo;
+
 
     @FXML
     private Button jogar;
@@ -53,6 +57,7 @@ public class MenuController {
         stage.close();
         }
     }
+
 
     @FXML
     private Button ranking;

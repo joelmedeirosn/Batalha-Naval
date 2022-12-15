@@ -19,10 +19,15 @@ public class JogarController {
     private Parent root;
 
     @FXML
-    private Label labelNome;
+    private Label labelNome1;
+    @FXML
+    private Label labelNome2;
 
     @FXML
-    private TextField txtNome;
+    private TextField txtNome1;
+
+    @FXML
+    private TextField txtNome2;
 
     @FXML
     private Button nomeAvancar;
@@ -32,8 +37,13 @@ public class JogarController {
 
     }
 
-    public void setarNome(){
-        labelNome.setText("Seu nome é: "+ txtNome.getText());
+    public void setarNome1(){
+        labelNome1.setText("Seu nome é: "+ txtNome1.getText());
+
+    }
+
+    public void setarNome2(){
+        labelNome2.setText("Seu nome é: "+ txtNome2.getText());
 
     }
 

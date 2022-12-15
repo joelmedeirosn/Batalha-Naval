@@ -21,10 +21,18 @@ import javafx.stage.Stage;
 import javafx.scene.*;
 import javafx.scene.paint.*;
 import javafx.scene.shape.*;
+import javafx.stage.StageStyle;
+import javafx.scene.input.MouseEvent;
+import java.lang.Object;
+import java.util.EventObject;
+import javafx.event.Event;
+import javafx.scene.input.InputEvent;
+
 
 import java.io.IOException;
 
 public class MainGame extends Application {
+    double x, y=0;
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(MainGame.class.getResource("view/Menu.fxml"));
@@ -33,6 +41,7 @@ public class MainGame extends Application {
         String css = this.getClass().getResource("/com/example/batalhanaval/view/Menu.css").toExternalForm();
         stage.setScene(scene);
         stage.setTitle("Batalha Naval 🚢");
+        stage.initStyle(StageStyle.UTILITY);
         stage.setScene(scene);
         stage.show();
 
@@ -41,6 +50,7 @@ public class MainGame extends Application {
             sairTelaAction(stage);
         });
     }
+
     public void sairTelaAction(Stage stage){
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
         alert.setTitle("Logout");
@@ -51,8 +61,6 @@ public class MainGame extends Application {
         }
 
     }
-
-
 
     public static void main(String[] args) {
         launch(args);
