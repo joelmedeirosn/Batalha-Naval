@@ -2,7 +2,7 @@ package com.example.batalhanaval.model;
 
 public class Navios {
 
-    public int navioAvioes(){
+    public void navioAvioes(){
         int i,j;
         for (i=0;i<=2;i++){
             for(j=0;j<=2;j++){
@@ -16,34 +16,41 @@ public class Navios {
             }
             System.out.println();
 
-        } return 0;
-
+        }
     }
-    public int navio4Canos(){
+    public void navio4Canos(){
         for(int i=1;i<5;i++){
             System.out.println("N");
-        }return 0;
+        }
     }
 
-    public int navio3Canos(){
+    public void navio3Canos(){
         for(int i=1;i<4;i++){
             System.out.println("N");
-        }return 0;
+        }
     }
-    public int navio2Canos(){
+    public void navio2Canos(){
         for(int i=1;i<3;i++){
             System.out.println("N");
-        }return 0;
+        }
     }
-    public int navio1Cano(){
+    public void navio1Cano(){
         System.out.println("N");
-        return 0;
+
     }
-    private int quantAvioes=1;
-    private int quant4Canos=1;
-    private int quant3Canos=2;
-    private int quant2Canos=3;
-    private int quant1Cano=4;
+    private int quantAvioes;
+    private int quant4Canos;
+    private int quant3Canos;
+    private int quant2Canos;
+    private int quant1Cano;
+
+    public Navios(){
+        this.quant1Cano=4;
+        this.quant2Canos=3;
+        this.quant3Canos=2;
+        this.quant4Canos=1;
+        this.quantAvioes=1;
+    }
 
 
 
