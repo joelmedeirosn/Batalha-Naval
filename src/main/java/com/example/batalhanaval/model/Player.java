@@ -24,5 +24,37 @@ public class Player {
     public String getPlayer1Name() {
         return playerName;
     }
+
+    public boolean isGanhou() {
+        return ganhou;
+    }
+
+    public void setGanhou(boolean ganhou) {
+        this.ganhou = ganhou;
+    }
+
+    public boolean isNavioCustom() {
+        return navioCustom;
+    }
+
+    public void setNavioCustom(boolean navioCustom) {
+        this.navioCustom = navioCustom;
+    }
+
+    public double getTimer() {
+        return timer;
+    }
+
+    public void setTimer(double timer) {
+        this.timer = timer;
+    }
+
+    public int getQuantAtaques() {
+        return quantAtaques;
+    }
+
+    public void setQuantAtaques(int quantAtaques) {
+        this.quantAtaques = quantAtaques;
+    }
 }
 
