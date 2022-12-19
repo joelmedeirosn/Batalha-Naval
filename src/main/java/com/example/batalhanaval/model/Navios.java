@@ -1,6 +1,18 @@
 package com.example.batalhanaval.model;
 
 public class Navios {
+    private int quantAvioes;
+    private int quant4Canos;
+    private int quant3Canos;
+    private int quant2Canos;
+    private int quant1Cano;
+    public Navios(){
+        this.quant1Cano=4;
+        this.quant2Canos=3;
+        this.quant3Canos=2;
+        this.quant4Canos=1;
+        this.quantAvioes=1;
+    }
 
     public void navioAvioes(){
         int i,j;
@@ -38,19 +50,9 @@ public class Navios {
         System.out.println("N");
 
     }
-    private int quantAvioes;
-    private int quant4Canos;
-    private int quant3Canos;
-    private int quant2Canos;
-    private int quant1Cano;
 
-    public Navios(){
-        this.quant1Cano=4;
-        this.quant2Canos=3;
-        this.quant3Canos=2;
-        this.quant4Canos=1;
-        this.quantAvioes=1;
-    }
+
+
 
 
 
