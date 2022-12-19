@@ -3,29 +3,26 @@ package com.example.batalhanaval.model;
 import java.util.Scanner;
 
 public class Player {
-    private String player1Name;
-    private String player2Name;
+    private String playerName;
 
-    public void name(){
+    private boolean ganhou;
+    private boolean navioCustom; // modo customizado mais adiante.
+    private double timer; // tempo que o player demora pra jogar.
+    private int quantAtaques; // quantidade de ataques do jogador.
+
+    public void setPlayerName(){
         Scanner input = new Scanner(System.in);
-        System.out.println("Digite seu nome, jogador 1:");
-        player1Name = input.nextLine();
+        System.out.println("Digite seu nome, jogador:");
+        playerName = input.nextLine();
 
-        while (player1Name.length()<=2 || player1Name.length()>=16){
+        while (playerName.length()<=2 || playerName.length()>=16){
             System.out.println("Digite um nome entre 3 e 15 caracteres.");
-            player1Name = input.nextLine();
-        }
-        System.out.println("Digite seu nome, jogador 2:");
-        player2Name = input.nextLine();
-        while (player2Name.length()<=2 || player2Name.length()>=16){
-            System.out.println("Digite um nome entre 3 e 15 caracteres.");
-            player2Name = input.nextLine();
+            playerName = input.nextLine();
         }
     }
 
     public String getPlayer1Name() {
-        return player1Name;
+        return playerName;
     }
-
-    public String getPlayer2Name() {return player2Name;}
 }
+
