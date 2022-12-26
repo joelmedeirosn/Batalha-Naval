@@ -3,6 +3,8 @@ package com.example.batalhanaval.model;
 import java.util.Scanner;
 
 public class TabuleiroDefesa {
+    private int NavioPositionLine;
+    private int NavioPositionCol;
     private char[][] dimensoes = new char[10][10];
     private int[][] posicaoDefesa;
     private int quantAvioes;
@@ -21,11 +23,39 @@ public class TabuleiroDefesa {
         this.quantAvioes=quantAvioes;
     }
 
+    public void defender(){
+
+        Scanner scanner = new Scanner(System.in);
+        Navios navios = new Navios(); // chama a classe navios
+        System.out.println("Selecione a Linha");
+        System.out.println("1, 2, 3, 4, 5, 6, 7, 8, 9 ou 10:"); //implementar a conversão de letras para numeros
+        NavioPositionLine = (scanner.nextInt() - 1);
+        while(NavioPositionLine > 9 || NavioPositionLine < 0){
+            System.out.print("");
+            System.out.println("Selecione uma Linha válida");
+            System.out.println("1, 2, 3, 4, 5, 6, 7, 8, 9 ou 10:");
+            NavioPositionLine = (scanner.nextInt() - 1);
+        }
+        System.out.println("Selecione a Coluna");
+        System.out.println("1, 2, 3, 4, 5, 6, 7, 8, 9 ou 10:");
+        NavioPositionCol = (scanner.nextInt() - 1);
+        while(NavioPositionCol > 9 || NavioPositionCol < 0){
+            System.out.print("");
+            System.out.println("Selecione uma Coluna válida");
+            System.out.println("1, 2, 3, 4, 5, 6, 7, 8, 9 ou 10:");
+            NavioPositionCol = (scanner.nextInt() - 1);
+        }
+    }
 
     public void teste(){
+        defender();
         for(int i=0;i<dimensoes.length; i++){
             for(int j=0;j<dimensoes.length;j++){
-                System.out.print(dimensoes[i][j]);
+                if (i == NavioPositionLine && j == NavioPositionCol) {
+                    System.out.print(dimensoes[i][j] = 'N');
+                }  else {
+                    System.out.print(dimensoes[i][j] = '□');
+                }
             }
             System.out.println();
         }
@@ -33,11 +63,7 @@ public class TabuleiroDefesa {
 
 
 
-    public void defender(){
-        Scanner scanner = new Scanner(System.in);
-        Navios navios = new Navios(); // chama a classe navios
 
-    }
 
 
     public int[][] getPosicaoDefesa() {

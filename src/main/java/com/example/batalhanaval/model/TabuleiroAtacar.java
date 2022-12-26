@@ -14,7 +14,7 @@ public class TabuleiroAtacar {
 
     }
 
-    public void atacar(){
+    public void atacarNavio(){
 
 
     }
