@@ -29,8 +29,6 @@ public class MenuController {
     private AnchorPane scenePane;
     @FXML
     Label titulo;
-
-
     @FXML
     private Button jogar;
     private Stage stage;

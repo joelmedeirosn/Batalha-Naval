@@ -51,11 +51,6 @@ public class Navios {
 
     }
 
-
-
-
-
-
     public int getQuantAvioes() {
         return quantAvioes;
     }
@@ -75,5 +70,6 @@ public class Navios {
     public int getQuant1Cano() {
         return quant1Cano;
     }
+
 
 }

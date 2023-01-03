@@ -1,8 +1,9 @@
 package com.example.batalhanaval.model;
 
 import java.util.Scanner;
+import java.lang.*;
 
-public class TabuleiroDefesa {
+public class TabuleiroDefesa extends Navios {
     private int NavioPositionLine;
     private int NavioPositionCol;
     private char[][] dimensoes = new char[10][10];
@@ -65,14 +66,11 @@ public class TabuleiroDefesa {
 
 
 
-
     public int[][] getPosicaoDefesa() {
         return posicaoDefesa;
     }
 
-    public void setPosicaoDefesa(int[][] posicaoDefesa) {
-        this.posicaoDefesa = posicaoDefesa;
-    }
+    public void setPosicaoDefesa(int[][] posicaoDefesa) {this.posicaoDefesa = posicaoDefesa;}
 
 
 }
