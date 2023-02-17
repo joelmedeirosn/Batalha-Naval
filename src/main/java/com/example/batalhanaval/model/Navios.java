@@ -48,7 +48,6 @@ public class Navios {
     }
     public void navio1Cano(){
         System.out.println("N");
-
     }
 
     public int getQuantAvioes() {
