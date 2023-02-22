@@ -8,7 +8,7 @@ public class Teste {
         //Player player2 = new Player();
         player1.setPlayerName();
         //player2.setPlayerName();
-        tabuleiro1.teste();
+        tabuleiro1.printaTabuleiro();
         //tabuleiro2.teste();
 
 

@@ -4,7 +4,8 @@ import java.util.Scanner;
 import java.lang.*;
 
 public class TabuleiroDefesa extends Navios {
-    private int[] NavioPositionLine = new int[10]; // deixar cada indice do array referente a um dos navios, ex: NavioPositionLine[0] sera referentea posição do primeiro navio1cano.
+    private int[] NavioPositionLine = new int[10];  // deixar cada indice do array referente a um dos navios
+                                                    // ex: NavioPositionLine[0] sera referentea posição do primeiro navio1cano.
     private int[] NavioPositionCol = new int [10];
     private char[][] dimensoes = new char[10][10];
 
@@ -17,19 +18,25 @@ public class TabuleiroDefesa extends Navios {
 
     //private Navios[][] navios;
 
+
     public TabuleiroDefesa(int quant1Cano, int quant2Canos, int quant3Canos, int quant4Canos, int quantAvioes) {
         this.quant1Cano=quant1Cano;
         this.quant2Canos=quant2Canos;
         this.quant3Canos=quant3Canos;
         this.quant4Canos=quant4Canos;
         this.quantAvioes=quantAvioes;
+        for(int i=0;i<dimensoes.length; i++) {
+            for (int j = 0; j < dimensoes.length; j++) {
+                dimensoes[i][j] = '□';
+            }
+        }
     }
 
     public void defender(){
         NavioPositionLine[0] = 0;
         NavioPositionCol[0] = 0;
 
-        for(int i = 0; i < (quant1Cano + quant2Canos + quant3Canos + quant4Canos + quantAvioes - 1);i++){
+        for(int i = 0; i < (quant1Cano + quant2Canos + quant3Canos + quant4Canos + quantAvioes);i++){
 
             Scanner scanner = new Scanner(System.in);
             Navios navios = new Navios(); // chama a classe navios
@@ -55,21 +62,19 @@ public class TabuleiroDefesa extends Navios {
         }
     }
 
-    public void teste(){
+    public void printaTabuleiro(){
         defender();
-        for(int i=0;i<dimensoes.length; i++){
-            for(int j=0;j<dimensoes.length;j++){
-                if (i == NavioPositionLine[i] && j == NavioPositionCol[j])
-                {
-                    System.out.print(dimensoes[i][j] = 'N');
-                }  else {
-                    System.out.print(dimensoes[i][j] = '□');
-                }
-
+        for(int i=0;i<dimensoes.length; i++) {
+                dimensoes[NavioPositionLine[i]][NavioPositionCol[i]] = 'N';
+        }
+        for(int i=0;i<dimensoes.length; i++) {
+            for(int j=0; j< dimensoes.length;j++){
+                System.out.print(dimensoes[i][j]);
             }
             System.out.println();
         }
     }
+
 
 
 /*    public int[][] getposicaoDefesa() {
