@@ -4,9 +4,9 @@ import java.util.Scanner;
 import java.lang.*;
 
 public class TabuleiroDefesa extends Navios {
-    private int[] NavioPositionLine = new int[10];  // deixar cada indice do array referente a um dos navios
+    private int[] NavioDefenseLine = new int[10];  // deixar cada indice do array referente a um dos navios
                                                     // ex: NavioPositionLine[0] sera referentea posição do primeiro navio1cano.
-    private int[] NavioPositionCol = new int [10];
+    private int[] NavioDefenseCol = new int [10];
     private char[][] dimensoes = new char[10][10];
 
     //private int[][] posicaoDefesa;
@@ -33,8 +33,8 @@ public class TabuleiroDefesa extends Navios {
     }
 
     public void defender(){
-        NavioPositionLine[0] = 0;
-        NavioPositionCol[0] = 0;
+        NavioDefenseLine[0] = 0;
+        NavioDefenseCol[0] = 0;
 
         for(int i = 0; i < (quant1Cano + quant2Canos + quant3Canos + quant4Canos + quantAvioes);i++){
 
@@ -43,21 +43,21 @@ public class TabuleiroDefesa extends Navios {
 
             System.out.println("Selecione a Linha");
             System.out.println("1, 2, 3, 4, 5, 6, 7, 8, 9 ou 10:"); //implementar a conversão de letras para numeros
-            NavioPositionLine[i] = (scanner.nextInt() - 1);
-            while(NavioPositionLine[i] > 9 || NavioPositionLine[i] < 0){
+            NavioDefenseLine[i] = (scanner.nextInt() - 1);
+            while(NavioDefenseLine[i] > 9 || NavioDefenseLine[i] < 0){
             System.out.print("");
             System.out.println("Selecione uma Linha válida");
             System.out.println("1, 2, 3, 4, 5, 6, 7, 8, 9 ou 10:");
-            NavioPositionLine[i] = (scanner.nextInt() - 1);
+            NavioDefenseLine[i] = (scanner.nextInt() - 1);
             }
             System.out.println("Selecione a Coluna");
             System.out.println("1, 2, 3, 4, 5, 6, 7, 8, 9 ou 10:");
-            NavioPositionCol[i] = (scanner.nextInt() - 1);
-            while(NavioPositionCol[i] > 9 || NavioPositionCol[i] < 0){
+            NavioDefenseCol[i] = (scanner.nextInt() - 1);
+            while(NavioDefenseCol[i] > 9 || NavioDefenseCol[i] < 0){
             System.out.print("");
             System.out.println("Selecione uma Coluna válida");
             System.out.println("1, 2, 3, 4, 5, 6, 7, 8, 9 ou 10:");
-            NavioPositionCol[i] = (scanner.nextInt() - 1);
+            NavioDefenseCol[i] = (scanner.nextInt() - 1);
             }
         }
     }
@@ -65,7 +65,7 @@ public class TabuleiroDefesa extends Navios {
     public void printaTabuleiro(){
         defender();
         for(int i=0;i<dimensoes.length; i++) {
-                dimensoes[NavioPositionLine[i]][NavioPositionCol[i]] = 'N';
+                dimensoes[NavioDefenseLine[i]][NavioDefenseCol[i]] = 'N';
         }
         for(int i=0;i<dimensoes.length; i++) {
             for(int j=0; j< dimensoes.length;j++){
@@ -83,15 +83,15 @@ public class TabuleiroDefesa extends Navios {
     public void setposicaoDefesa(int[][] posicaoDefesa) {this.posicaoDefesa = posicaoDefesa;}
 */
 
-    public int[] getNavioPositionLine() {
-        return NavioPositionLine;
+    public int[] getNavioDefenseLine() {
+        return NavioDefenseLine;
     }
 
-    public void setNavioPositionLine(int[] NavioPositionLine) {this.NavioPositionLine = NavioPositionLine;}
+    public void setNavioDefenseLine(int[] NavioPositionLine) {this.NavioDefenseLine = NavioPositionLine;}
 
-    public int[] getNavioPositionCol(){
-        return NavioPositionCol;
+    public int[] getNavioDefenseCol(){
+        return NavioDefenseCol;
     }
-    public void setNavioPositionCol(int[] NavioPositionCol) {this.NavioPositionCol = NavioPositionCol;}
+    public void setNavioDefenseCol(int[] NavioPositionCol) {this.NavioDefenseCol = NavioPositionCol;}
 
 }
