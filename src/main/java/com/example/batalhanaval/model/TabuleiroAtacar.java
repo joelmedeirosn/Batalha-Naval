@@ -13,8 +13,7 @@ public class TabuleiroAtacar extends Navios{
     private String Agua;
     private char[][] dimensoes;
     public TabuleiroAtacar(char[][]dimensoes){
-        this.dimensoes=dimensoes;
-
+        this.dimensoes = dimensoes;
     }
 
 
@@ -40,8 +39,6 @@ public class TabuleiroAtacar extends Navios{
                 System.out.println("1, 2, 3, 4, 5, 6, 7, 8, 9 ou 10:");
                 NavioAtaqueCol[0] = (scanner.nextInt() - 1);
             }
-
-
     }
 
     public int[][] getPosicaoAtaque() {

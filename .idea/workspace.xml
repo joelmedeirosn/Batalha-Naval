@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05f37349-1d9c-487c-afda-7da1fcd81c1a" name="Changes" comment="modificações basicas na classe de TabuleiroDefesa e inicio da implementação de adição de varios navios na grelha">
+    <list default="true" id="05f37349-1d9c-487c-afda-7da1fcd81c1a" name="Changes" comment="Mudanças no nome dos atributos e armazenamento das coordenadas de ataque">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/model/Navios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/model/Navios.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/model/TabuleiroAtacar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/model/TabuleiroAtacar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/model/TabuleiroDefesa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/model/TabuleiroDefesa.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,16 +48,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/insec/eclipse-workspace/Batalha-Naval&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.JavaFX&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/insec/eclipse-workspace/Batalha-Naval",
+    "settings.editor.selected.configurable": "preferences.JavaFX"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Natan\Documents\ECOMP\4° PERIODO\LPOO redenção\Batalha-Naval\src\main\resources\com\example\batalhanaval\view\imagens" />
@@ -236,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677103175213</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Mudanças no nome dos atributos e armazenamento das coordenadas de ataque">
+      <created>1677253125371</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1677253125371</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -264,7 +271,8 @@
     <MESSAGE value="classe player" />
     <MESSAGE value="começo de herança" />
     <MESSAGE value="modificações basicas na classe de TabuleiroDefesa e inicio da implementação de adição de varios navios na grelha" />
-    <option name="LAST_COMMIT_MESSAGE" value="modificações basicas na classe de TabuleiroDefesa e inicio da implementação de adição de varios navios na grelha" />
+    <MESSAGE value="Mudanças no nome dos atributos e armazenamento das coordenadas de ataque" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mudanças no nome dos atributos e armazenamento das coordenadas de ataque" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
