@@ -12,15 +12,17 @@ public class TabuleiroAtacar extends Navios{
     private String Tiro;
     private String Agua;
     private char[][] dimensoes;
+
+    /*
     public TabuleiroAtacar(char[][]dimensoes){
         this.dimensoes = dimensoes;
     }
-
+    */
 
     public void atacarNavio(){
 
             Scanner scanner = new Scanner(System.in);
-            Navios navios = new Navios(); // chama a classe navios
+            Navios navios = new Navios(4,3,2,1,1); // chama a classe navios
             System.out.println("Selecione a Linha");
             System.out.println("1, 2, 3, 4, 5, 6, 7, 8, 9 ou 10:"); //implementar a conversão de letras para numeros
             NavioAtaqueLine[0] = (scanner.nextInt() - 1);

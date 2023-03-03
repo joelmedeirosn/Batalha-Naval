@@ -6,12 +6,12 @@ public class Navios {
     private int quant3Canos;
     private int quant2Canos;
     private int quant1Cano;
-    public Navios(){
-        this.quant1Cano=4;
-        this.quant2Canos=3;
-        this.quant3Canos=2;
-        this.quant4Canos=1;
-        this.quantAvioes=1;
+    public Navios(int quant1Cano, int quant2Canos, int quant3Canos, int quant4Canos, int quantAvioes){
+        this.quant1Cano;
+        this.quant2Canos;
+        this.quant3Canos;
+        this.quant4Canos;
+        this.quantAvioes;
     }
 
     public void navioAvioes(){
