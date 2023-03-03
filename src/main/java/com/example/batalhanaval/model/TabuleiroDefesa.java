@@ -9,18 +9,10 @@ public class TabuleiroDefesa extends Navios {
     private int[] NavioDefenseCol = new int [10];
     private char[][] dimensoes = new char[10][10];
 
-    //private int[][] posicaoDefesa;
-    //private int quantAvioes;
-    //private int quant4Canos;
-    //private int quant3Canos;
-    //private int quant2Canos;
-    //private int quant1Cano;
-
-    //private Navios[][] navios;
 
 
     public TabuleiroDefesa(int quant1Cano, int quant2Canos, int quant3Canos, int quant4Canos, int quantAvioes) {
-        super(quant1Cano,quant2Canos,quant3Canos,quant4Canos,quantAvioes,);
+        super(quant1Cano,quant2Canos,quant3Canos,quant4Canos,quantAvioes);
         for(int i=0;i<dimensoes.length; i++) {
             for (int j = 0; j < dimensoes.length; j++) {
                 dimensoes[i][j] = '□';
@@ -29,13 +21,14 @@ public class TabuleiroDefesa extends Navios {
     }
 
     public void defender(){
+        Player player1 = new Player();
+        Player player2 = new Player();
         NavioDefenseLine[0] = 0;
         NavioDefenseCol[0] = 0;
+        Scanner scanner = new Scanner(System.in);
+        Navios navios = new Navios(4,3,2,1,1);
 
-        for(int i = 0; i < (quant1Cano + quant2Canos + quant3Canos + quant4Canos + quantAvioes);i++){
-
-            Scanner scanner = new Scanner(System.in);
-            Navios navios = new Navios(4,3,2,1,1); // chama a classe navios
+        for(int i = 0; i < (getQuant1Cano() + getQuant2Canos() + getQuant3Canos() + getQuant4Canos() + getQuantAvioes());i++){
 
             System.out.println("Selecione a Linha");
             System.out.println("1, 2, 3, 4, 5, 6, 7, 8, 9 ou 10:"); //implementar a conversão de letras para numeros
@@ -58,7 +51,7 @@ public class TabuleiroDefesa extends Navios {
         }
     }
 
-    public void printaTabuleiro(){
+    public void printaDefesa(){
         defender();
         for(int i=0;i<dimensoes.length; i++) {
                 dimensoes[NavioDefenseLine[i]][NavioDefenseCol[i]] = 'N';
@@ -90,4 +83,11 @@ public class TabuleiroDefesa extends Navios {
     }
     public void setNavioDefenseCol(int[] NavioPositionCol) {this.NavioDefenseCol = NavioPositionCol;}
 
+    public char[][] getDimensoes() {
+        return dimensoes;
+    }
+
+    public void setDimensoes(char[][] dimensoes) {
+        this.dimensoes = dimensoes;
+    }
 }

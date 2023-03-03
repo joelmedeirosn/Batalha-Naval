@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05f37349-1d9c-487c-afda-7da1fcd81c1a" name="Changes" comment="Teste">
+    <list default="true" id="05f37349-1d9c-487c-afda-7da1fcd81c1a" name="Changes" comment="começo de herança">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/model/Navios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/model/Navios.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/model/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/model/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/model/TabuleiroAtacar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/model/TabuleiroAtacar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/model/TabuleiroDefesa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/model/TabuleiroDefesa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/model/Teste.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/model/Console.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,16 +51,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/insec/eclipse-workspace/Batalha-Naval",
-    "settings.editor.selected.configurable": "preferences.JavaFX"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/insec/eclipse-workspace/Batalha-Naval&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.JavaFX&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Natan\Documents\ECOMP\4° PERIODO\LPOO redenção\Batalha-Naval\src\main\resources\com\example\batalhanaval\view\imagens" />
@@ -67,9 +71,9 @@
       <recent name="C:\Users\Natan\Documents\ECOMP\4° PERIODO\LPOO redenção\Batalha-Naval\src\model" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Teste">
-    <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.batalhanaval.HelloApplication" />
+  <component name="RunManager" selected="Application.Console">
+    <configuration name="Console" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.batalhanaval.model.Console" />
       <module name="Batalha-Naval" />
       <extension name="coverage">
         <pattern>
@@ -94,8 +98,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Teste" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.batalhanaval.model.Teste" />
+    <configuration name="com.example.batalhanaval.HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.batalhanaval.HelloApplication" />
       <module name="Batalha-Naval" />
       <extension name="coverage">
         <pattern>
@@ -109,7 +113,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Teste" />
+        <item itemvalue="Application.Console" />
         <item itemvalue="Application.MainGame" />
       </list>
     </recent_temporary>
@@ -249,15 +253,19 @@
       <option name="project" value="LOCAL" />
       <updated>1677804125862</updated>
     </task>
-    <task id="LOCAL-00019" summary="Teste">
-      <created>1677804495580</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1677804495580</updated>
-    </task>
-    <option name="localTasksCounter" value="20" />
+    <option name="localTasksCounter" value="19" />
     <servers />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

@@ -14,7 +14,6 @@ public class Navios {
         this.quantAvioes = quantAvioes;
     }
 
-
     public void navioAvioes(){
         int i,j;
         for (i=0;i<=2;i++){
