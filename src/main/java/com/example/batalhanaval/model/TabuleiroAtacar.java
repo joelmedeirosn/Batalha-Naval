@@ -13,11 +13,12 @@ public class TabuleiroAtacar extends Navios{
     private String Agua;
     private char[][] dimensoes;
 
-    /*
-    public TabuleiroAtacar(char[][]dimensoes){
+
+    public TabuleiroAtacar(int quant1Cano, int quant2Canos, int quant3Canos, int quant4Canos, int quantAvioes, char[][]dimensoes){
+        super(quant1Cano,quant2Canos,quant3Canos,quant4Canos,quantAvioes);
         this.dimensoes = dimensoes;
     }
-    */
+
 
     public void atacarNavio(){
 

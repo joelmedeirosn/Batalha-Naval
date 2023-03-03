@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05f37349-1d9c-487c-afda-7da1fcd81c1a" name="Changes" comment="Teste">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/model/Navios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/model/Navios.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/model/TabuleiroAtacar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/model/TabuleiroAtacar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/model/TabuleiroDefesa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/model/TabuleiroDefesa.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -249,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677804125862</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Teste">
+      <created>1677804495580</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1677804495580</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

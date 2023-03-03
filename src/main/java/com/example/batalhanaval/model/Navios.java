@@ -7,12 +7,13 @@ public class Navios {
     private int quant2Canos;
     private int quant1Cano;
     public Navios(int quant1Cano, int quant2Canos, int quant3Canos, int quant4Canos, int quantAvioes){
-        this.quant1Cano;
-        this.quant2Canos;
-        this.quant3Canos;
-        this.quant4Canos;
-        this.quantAvioes;
+        this.quant1Cano = quant1Cano;
+        this.quant2Canos = quant2Canos;
+        this.quant3Canos = quant3Canos;
+        this.quant4Canos = quant4Canos;
+        this.quantAvioes = quantAvioes;
     }
+
 
     public void navioAvioes(){
         int i,j;
