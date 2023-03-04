@@ -2,19 +2,15 @@ package com.example.batalhanaval.model;
 
 import java.util.Scanner;
 
-public class TabuleiroAtacar extends Tabuleiro {
+public class Reserva extends Navios {
 
-   Tabuleiro tabuleiro = new Tabuleiro("gabe",4,3,2,1,1);
+   Navios tabuleiro = new Navios("gabe",4,3,2,1,1);
     private int[] NavioAtaqueLine = new int[10];
     private int[] NavioAtaqueCol = new int[10];
-    private String cruz = "Cruz";
     private int[][] posicaoAtaque;
-
-    private String tiro ="Tiro";
-    private String Agua = "Agua";
     private boolean turno;
 
-    public TabuleiroAtacar(String playerName,int quant1Cano, int quant2Canos, int quant3Canos, int quant4Canos, int quantAvioes){
+    public Reserva(String playerName, int quant1Cano, int quant2Canos, int quant3Canos, int quant4Canos, int quantAvioes){
         super(playerName,quant1Cano, quant2Canos, quant3Canos, quant4Canos, quantAvioes);
 
     }
@@ -23,7 +19,7 @@ public class TabuleiroAtacar extends Tabuleiro {
         Player player1 = new Player("gabe");
         Player player2 = new Player("gabe");
         Player playerAtual;
-        TabuleiroDefesa defesa = new TabuleiroDefesa("gabe",4,3,2,1,1);
+        Tabuleiro defesa = new Tabuleiro("gabe",4,3,2,1,1);
         int contador = 0;
 
         NavioAtaqueLine[0] = 0;
@@ -55,7 +51,7 @@ public class TabuleiroAtacar extends Tabuleiro {
 
     }
         public void printaAtaque(){
-        TabuleiroDefesa defesa = new TabuleiroDefesa("gabe",4,3,2,1,1);
+        Tabuleiro defesa = new Tabuleiro("gabe",4,3,2,1,1);
         atacarNavio();
         for(int i = 0; i< getDimensoes().length; i++) {
             getDimensoes()[NavioAtaqueLine[i]][NavioAtaqueCol[i]] = 'A';

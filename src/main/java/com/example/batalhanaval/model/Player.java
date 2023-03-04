@@ -35,6 +35,7 @@ public class Player {
             System.out.println("Digite um nome entre 3 e 15 caracteres.");
             playerName = input.nextLine();
         }
+
     }
 
     public String getPlayerName() {
