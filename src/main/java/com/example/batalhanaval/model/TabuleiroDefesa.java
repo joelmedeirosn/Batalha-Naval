@@ -3,22 +3,22 @@ package com.example.batalhanaval.model;
 import java.util.Scanner;
 import java.lang.*;
 
-public class TabuleiroDefesa extends Navios {
-    Navios navios = new Navios(4,3,2,1,1);
+public class TabuleiroDefesa extends Tabuleiro {
+    Tabuleiro tabuleiro = new Tabuleiro("gabe",4,3,2,1,1);
     private int[] NavioDefenseLine = new int[10];  // deixar cada indice do array referente a um dos navios
                                                     // ex: NavioPositionLine[0] sera referentea posição do primeiro navio1cano.
     private int[] NavioDefenseCol = new int [10];
 
 
 
-    public TabuleiroDefesa(int quant1Cano, int quant2Canos, int quant3Canos, int quant4Canos, int quantAvioes) {
-        super(quant1Cano,quant2Canos,quant3Canos,quant4Canos,quantAvioes);
+    public TabuleiroDefesa(String playerName,int quant1Cano, int quant2Canos, int quant3Canos, int quant4Canos, int quantAvioes) {
+        super(playerName,quant1Cano,quant2Canos,quant3Canos,quant4Canos,quantAvioes);
 
     }
 
     public void defender(){
-        Player player1 = new Player();
-        Player player2 = new Player();
+        Player player1 = new Player("gabe");
+        Player player2 = new Player("gabe");
         Player playerAtual;
         NavioDefenseLine[0] = 0;
         NavioDefenseCol[0] = 0;

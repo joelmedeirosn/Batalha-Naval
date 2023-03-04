@@ -10,6 +10,22 @@ public class Player {
     private double timer; // tempo que o player demora pra jogar.
     private int quantAtaques; // quantidade de ataques do jogador.
 
+    private char[][] dimensoes = new char[10][10];
+
+    public char[][] getDimensoes() {
+        return dimensoes;
+    }
+
+    public Player(String playerName){
+        this.playerName = playerName;
+        this.dimensoes = dimensoes;
+        for(int i=0;i<dimensoes.length; i++) {
+            for (int j = 0; j < dimensoes.length; j++) {
+                dimensoes[i][j] = '□';
+            }
+        }
+    }
+
     public void setPlayerName(){
         Scanner input = new Scanner(System.in);
         System.out.println("Digite seu nome, jogador:");
