@@ -6,12 +6,20 @@ public class Navios {
     private int quant3Canos;
     private int quant2Canos;
     private int quant1Cano;
+    private char[][] dimensoes = new char[10][10];
     public Navios(int quant1Cano, int quant2Canos, int quant3Canos, int quant4Canos, int quantAvioes){
         this.quant1Cano = quant1Cano;
         this.quant2Canos = quant2Canos;
         this.quant3Canos = quant3Canos;
         this.quant4Canos = quant4Canos;
         this.quantAvioes = quantAvioes;
+        this.dimensoes = dimensoes;
+        for(int i=0;i<dimensoes.length; i++) {
+            for (int j = 0; j < dimensoes.length; j++) {
+                dimensoes[i][j] = '□';
+            }
+        }
+
     }
 
     public void navioAvioes(){
@@ -70,5 +78,8 @@ public class Navios {
         return quant1Cano;
     }
 
+    public char[][] getDimensoes() {
+        return dimensoes;
+    }
 
 }
