@@ -4,22 +4,16 @@ import java.util.Scanner;
 
 public class Player {
     private String playerName;
-
     private boolean ganhou;
     private boolean navioCustom; // modo customizado mais adiante.
     private double timer; // tempo que o player demora pra jogar.
     private int quantAtaques; // quantidade de ataques do jogador.
 
-    private char[][] dimensoes = new char[10][10];
+
 
     public Player(String playerName){
         this.playerName = playerName;
-        this.dimensoes = dimensoes;
-        for(int i=0;i<dimensoes.length; i++) {
-            for (int j = 0; j < dimensoes.length; j++) {
-                dimensoes[i][j] = '□';
-            }
-        }
+
     }
 
     public void setPlayerName(){
@@ -34,13 +28,7 @@ public class Player {
 
     }
 
-    public void setDimensoes(char[][] dimensoes) {
-        this.dimensoes = dimensoes;
-    }
 
-    public char[][] getDimensoes() {
-        return dimensoes;
-    }
     public String getPlayerName() {
         return playerName;
     }

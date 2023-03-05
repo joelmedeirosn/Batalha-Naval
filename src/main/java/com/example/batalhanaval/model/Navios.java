@@ -1,14 +1,15 @@
 package com.example.batalhanaval.model;
 
-public class Navios extends Player {
-    private int quantAvioes;
-    private int quant4Canos;
-    private int quant3Canos;
-    private int quant2Canos;
-    private int quant1Cano;
+public class Navios{
+    private int quantAvioes; //4
+    private int quant4Canos; //3
+    private int quant3Canos; //2
+    private int quant2Canos; //1
+    private int quant1Cano; //1
 
-    public Navios(String playerName , int quant1Cano, int quant2Canos, int quant3Canos, int quant4Canos, int quantAvioes){
-        super(playerName);
+
+
+    public Navios(int quant1Cano, int quant2Canos, int quant3Canos, int quant4Canos, int quantAvioes){
         this.quant1Cano = quant1Cano;
         this.quant2Canos = quant2Canos;
         this.quant3Canos = quant3Canos;
@@ -25,7 +26,7 @@ public class Navios extends Player {
                     System.out.print("P");
 
                 } else{
-                    System.out.print(" ");
+                    System.out.print("□");
 
                 }
             }

@@ -38,12 +38,12 @@ public class JogarController {
     }
 
     public void setarNome1(){
-        labelNome1.setText("Seu nome é: "+ txtNome1.getText());
+        labelNome1.setText("Seu nome é: " + txtNome1.getText());
 
     }
 
     public void setarNome2(){
-        labelNome2.setText("Seu nome é: "+ txtNome2.getText());
+        labelNome2.setText("Seu nome é: " + txtNome2.getText());
 
     }
 
