@@ -27,7 +27,6 @@ public class Tabuleiro extends Navios {
             System.out.println("1, 2, 3, 4, 5, 6, 7, 8, 9 ou 10:"); //implementar a conversão de letras para numeros
             linha[i] = (scanner.nextInt() - 1);
             while(linha[i] > 9 || linha[i] < 0){
-            System.out.print("");
             System.out.println("Selecione uma Linha válida");
             System.out.println("1, 2, 3, 4, 5, 6, 7, 8, 9 ou 10:");
             linha[i] = (scanner.nextInt() - 1);
@@ -36,7 +35,6 @@ public class Tabuleiro extends Navios {
             System.out.println("1, 2, 3, 4, 5, 6, 7, 8, 9 ou 10:");
             coluna[i] = (scanner.nextInt() - 1);
             while(coluna[i] > 9 || coluna[i] < 0){
-            System.out.print("");
             System.out.println("Selecione uma Coluna válida");
             System.out.println("1, 2, 3, 4, 5, 6, 7, 8, 9 ou 10:");
             coluna[i] = (scanner.nextInt() - 1);
@@ -46,6 +44,7 @@ public class Tabuleiro extends Navios {
 
     public void printaDefesa(){
         defender();
+        Player player1 = new Player("gabe");
         for(int i = 0; i< getDimensoes().length; i++){
                 getDimensoes()[linha[i]][coluna[i]] = 'N';
         }
@@ -64,7 +63,7 @@ public class Tabuleiro extends Navios {
         Tabuleiro defesa = new Tabuleiro("gabe",4,3,2,1,1);
         int contador = 0;
 
-       linha[0] = 0;
+        linha[0] = 0;
         coluna[0] = 0;
         Scanner scanner = new Scanner(System.in);
 
@@ -74,7 +73,6 @@ public class Tabuleiro extends Navios {
             System.out.println("1, 2, 3, 4, 5, 6, 7, 8, 9 ou 10:"); //implementar a conversão de letras para numeros
             linha[i] = (scanner.nextInt() - 1);
             while (linha[i] > 9 || linha[i] < 0) {
-                System.out.print("");
                 System.out.println("Selecione uma Linha válida");
                 System.out.println("1, 2, 3, 4, 5, 6, 7, 8, 9 ou 10:");
                 linha[i] = (scanner.nextInt() - 1);
@@ -83,7 +81,6 @@ public class Tabuleiro extends Navios {
             System.out.println("1, 2, 3, 4, 5, 6, 7, 8, 9 ou 10:");
             coluna[i] = (scanner.nextInt() - 1);
             while (coluna[i] > 9 || coluna[i] < 0) {
-                System.out.print("");
                 System.out.println("Selecione uma Coluna válida");
                 System.out.println("1, 2, 3, 4, 5, 6, 7, 8, 9 ou 10:");
                 coluna[i] = (scanner.nextInt() - 1);
@@ -107,14 +104,7 @@ public class Tabuleiro extends Navios {
             System.out.println();
         }
     }
-
-
-
-/*    public int[][] getposicaoDefesa() {
-        return posicaoDefesa;
-    }
-    public void setposicaoDefesa(int[][] posicaoDefesa) {this.posicaoDefesa = posicaoDefesa;}
-*/
+    
 
     public int[] getLinha() {
         return linha;

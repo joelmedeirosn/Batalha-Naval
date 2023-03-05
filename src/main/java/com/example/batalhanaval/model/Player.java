@@ -12,10 +12,6 @@ public class Player {
 
     private char[][] dimensoes = new char[10][10];
 
-    public char[][] getDimensoes() {
-        return dimensoes;
-    }
-
     public Player(String playerName){
         this.playerName = playerName;
         this.dimensoes = dimensoes;
@@ -38,6 +34,13 @@ public class Player {
 
     }
 
+    public void setDimensoes(char[][] dimensoes) {
+        this.dimensoes = dimensoes;
+    }
+
+    public char[][] getDimensoes() {
+        return dimensoes;
+    }
     public String getPlayerName() {
         return playerName;
     }
