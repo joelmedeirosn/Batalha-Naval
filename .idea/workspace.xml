@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05f37349-1d9c-487c-afda-7da1fcd81c1a" name="Changes" comment="redução para apenas uma classe de tabuleiro">
+    <list default="true" id="05f37349-1d9c-487c-afda-7da1fcd81c1a" name="Changes" comment="implementação do while do metodo de ataque, falta parar o while quando os navios estiverem abatidos.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/model/Console.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/model/Console.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/model/Navios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/model/Navios.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/model/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/model/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/model/Tabuleiro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/batalhanaval/model/Tabuleiro.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -264,7 +265,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677965818615</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="implementação do while do metodo de ataque, falta parar o while quando os navios estiverem abatidos.">
+      <created>1678064414330</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1678064414330</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -307,7 +315,8 @@
     <MESSAGE value="Teste" />
     <MESSAGE value="começando a printar o tabuleiro de ataque" />
     <MESSAGE value="redução para apenas uma classe de tabuleiro" />
-    <option name="LAST_COMMIT_MESSAGE" value="redução para apenas uma classe de tabuleiro" />
+    <MESSAGE value="implementação do while do metodo de ataque, falta parar o while quando os navios estiverem abatidos." />
+    <option name="LAST_COMMIT_MESSAGE" value="implementação do while do metodo de ataque, falta parar o while quando os navios estiverem abatidos." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

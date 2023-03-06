@@ -10,6 +10,7 @@ public class Tabuleiro extends Navios{
     private int[] linhaD = new int[10];
     private int[] colunaA = new int [10];
     private int[] colunaD = new int [10];
+
     public Tabuleiro(Player player, int quant1Cano, int quant2Canos, int quant3Canos, int quant4Canos, int quantAvioes) {
         super(quant1Cano,quant2Canos,quant3Canos,quant4Canos,quantAvioes);
         this.player = player;
@@ -20,7 +21,7 @@ public class Tabuleiro extends Navios{
         }
     }
 
-    public void defender(Tabuleiro x){
+    public void defender(Tabuleiro x){ //falta implementar cada tipo de navio no tabuleiro
         linhaD[0] = 0;
         colunaD[0] = 0;
         Scanner scanner = new Scanner(System.in);
@@ -80,7 +81,6 @@ public class Tabuleiro extends Navios{
                     colunaA[i] = (scanner.nextInt() - 1);
                 }
 
-
             }
             for(int i = 0; i< x.dimensoes.length; i++) {
                 x.dimensoes[linhaA[i]][colunaA[i]] = 'A';
@@ -93,11 +93,8 @@ public class Tabuleiro extends Navios{
                 System.out.println();
             }
         }
-
-
+        player.setGanhou(true);
     }
-
-
 
     public char[][] getDimensoes() {
         return dimensoes;
@@ -105,9 +102,7 @@ public class Tabuleiro extends Navios{
     public int[] getLinhaA() {
         return linhaA;
     }
-
     public void setLinhaA(int[] NavioPositionLine) {this.linhaA = NavioPositionLine;}
-
     public int[] getColunaA(){
         return colunaA;
     }
@@ -115,7 +110,6 @@ public class Tabuleiro extends Navios{
     public void setDimensoes(char[][] dimensoes) {
         this.dimensoes = dimensoes;
     }
-
     public char[][] dimensoes() {
         return dimensoes;
     }

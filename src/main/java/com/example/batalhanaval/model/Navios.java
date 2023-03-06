@@ -7,8 +7,6 @@ public class Navios{
     private int quant2Canos; //1
     private int quant1Cano; //1
 
-
-
     public Navios(int quant1Cano, int quant2Canos, int quant3Canos, int quant4Canos, int quantAvioes){
         this.quant1Cano = quant1Cano;
         this.quant2Canos = quant2Canos;
@@ -33,6 +31,7 @@ public class Navios{
             System.out.println();
 
         }
+
     }
     public void navio4Canos(){
         for(int i=1;i<5;i++){
@@ -45,31 +44,28 @@ public class Navios{
             System.out.println("N");
         }
     }
+
     public void navio2Canos(){
         for(int i=1;i<3;i++){
             System.out.println("N");
         }
     }
+
     public void navio1Cano(){
         System.out.println("N");
     }
-
     public int getQuantAvioes() {
         return quantAvioes;
     }
-
     public int getQuant4Canos() {
         return quant4Canos;
     }
-
     public int getQuant3Canos() {
         return quant3Canos;
     }
-
     public int getQuant2Canos() {
         return quant2Canos;
     }
-
     public int getQuant1Cano() {
         return quant1Cano;
     }
