@@ -9,9 +9,9 @@ public class Tabuleiro extends Navios{
     private char[][] dimensoes = new char[10][10];
 
     private int[] linhaA = new int [3];
-    private int[] linhaD = new int [(getQuant1Cano() + getQuant2Canos() + getQuant3Canos() + getQuant4Canos() + getQuantAvioes())];
+    private int[] linhaD = new int [10];
     private int[] colunaA = new int [3];
-    private int[] colunaD = new int [(getQuant1Cano() + getQuant2Canos() + getQuant3Canos() + getQuant4Canos() + getQuantAvioes())];
+    private int[] colunaD = new int [10];
 
     public Tabuleiro(Player player, int quant1Cano, int quant2Canos, int quant3Canos, int quant4Canos, int quantAvioes) {
         super(quant1Cano,quant2Canos,quant3Canos,quant4Canos,quantAvioes);
@@ -39,7 +39,9 @@ public class Tabuleiro extends Navios{
                     System.out.println("Selecione uma Coluna válida");
                     colunaD[i] = (scanner.nextInt() - 1);
                 }
+                checagem(linhaD[i],colunaD[i]);
         }
+
         for (int i = getQuant1Cano(); i < (getQuant1Cano() + getQuant2Canos());i++){
             System.out.println("Selecione a Linha do navio de 2 canos #"+ (i-(getQuant1Cano() - 1 )) +" ");
             linhaD[i] = (scanner.nextInt() - 1);
@@ -54,22 +56,82 @@ public class Tabuleiro extends Navios{
                 System.out.println("Selecione uma Coluna válida");
                 colunaD[i] = (scanner.nextInt() - 1);
             }
+            checagem(linhaD[i],colunaD[i]);
+        }
+
+        for (int i = (getQuant1Cano() + getQuant2Canos()); i < (getQuant1Cano() + getQuant2Canos() + getQuant3Canos());i++){
+            System.out.println("Selecione a Linha do navio de 3 canos #"+ (i-(getQuant1Cano() - 1 )) +" ");
+            linhaD[i] = (scanner.nextInt() - 1);
+            while(linhaD[i] > 9 || linhaD[i] < 0){
+                System.out.println("Selecione uma Linha válida");
+                linhaD[i] = (scanner.nextInt() - 1);
+            }
+            System.out.println("Selecione a Coluna do navio de 3 canos #"+ (i-(getQuant1Cano() - 1 )) +" ");
+            colunaD[i] = (scanner.nextInt() - 1);
+            while(colunaD[i] > 7 || colunaD[i] < 0){
+                System.out.println("Os Navios de 3 Canos devem ter suas colunas definidas entre 1 e 8");
+                System.out.println("Selecione uma Coluna válida");
+                colunaD[i] = (scanner.nextInt() - 1);
+            }
+            checagem(linhaD[i],colunaD[i]);
+        }
+
+        for (int i = (getQuant1Cano() + getQuant2Canos()+getQuant3Canos()); i < (getQuant1Cano() + getQuant2Canos() + getQuant3Canos()+getQuant4Canos());i++){
+            System.out.println("Selecione a Linha do navio de 4 canos #"+ (i-(getQuant1Cano() - 1 )) +" ");
+            linhaD[i] = (scanner.nextInt() - 1);
+            while(linhaD[i] > 9 || linhaD[i] < 0){
+                System.out.println("Selecione uma Linha válida");
+                linhaD[i] = (scanner.nextInt() - 1);
+            }
+            System.out.println("Selecione a Coluna do navio de 4 canos #"+ (i-(getQuant1Cano() - 1 )) +" ");
+            colunaD[i] = (scanner.nextInt() - 1);
+            while(colunaD[i] > 6 || colunaD[i] < 0){
+                System.out.println("Os Navios de 4 Canos devem ter suas colunas definidas entre 1 e 7");
+                System.out.println("Selecione uma Coluna válida");
+                colunaD[i] = (scanner.nextInt() - 1);
+            }
+            checagem(linhaD[i],colunaD[i]);
+
         }
 
         for(int i = 0; i < (getQuant1Cano()); i++) {
             // n esquecer -> x.dimensoes.length
-            x.dimensoes[linhaD[i]][colunaD[i]] = navio1Cano();
+            x.dimensoes[linhaD[i]][colunaD[i]] = navio();
         }
-        for(int i = (getQuant1Cano()); i < (getQuant2Canos() - 1); i++) {
+
+        for(int i = (getQuant1Cano()); i < (getQuant2Canos() + getQuant1Cano()); i++) {
             // n esquecer -> x.dimensoes.length
-            x.dimensoes[linhaD[i]][colunaD[i]] = navio1Cano();
-            x.dimensoes[linhaD[i]][colunaD[i+1]] = navio1Cano();
+            x.dimensoes[linhaD[i]][colunaD[i]] = navio();
+            x.dimensoes[linhaD[i]][colunaD[i]+1] = navio();
         }
+
+        for(int i = (getQuant1Cano()+getQuant2Canos()); i < (getQuant1Cano()+getQuant2Canos()+getQuant3Canos()); i++) {
+            // n esquecer -> x.dimensoes.length
+            x.dimensoes[linhaD[i]][colunaD[i]] = navio();
+            x.dimensoes[linhaD[i]][colunaD[i]+1] = navio();
+            x.dimensoes[linhaD[i]][colunaD[i]+2] = navio();
+        }
+        for(int i = (getQuant1Cano()+getQuant2Canos()+getQuant3Canos()); i < (getQuant1Cano()+getQuant2Canos()+getQuant3Canos()+getQuant4Canos()); i++) {
+            // n esquecer -> x.dimensoes.length
+            x.dimensoes[linhaD[i]][colunaD[i]] = navio();
+            x.dimensoes[linhaD[i]][colunaD[i]+1] = navio();
+            x.dimensoes[linhaD[i]][colunaD[i]+2] = navio();
+            x.dimensoes[linhaD[i]][colunaD[i]+3] = navio();
+        }
+
         for(int i = 0; i< x.dimensoes.length; i++){
             for(int j = 0; j< x.dimensoes.length; j++){
                 System.out.print(x.dimensoes[i][j]);
             }
             System.out.println();
+        }
+    }
+
+    public boolean checagem(int i, int j){
+        if(dimensoes[i][j] == '□'){
+            return true;
+        } else{
+            return false;
         }
     }
 

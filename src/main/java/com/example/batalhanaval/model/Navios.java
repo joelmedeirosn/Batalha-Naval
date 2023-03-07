@@ -31,25 +31,28 @@ public class Navios{
             System.out.println();
         }
     }
-    public void navio4Canos(){
-        for(int i=1;i<5;i++){
-            System.out.println("N");
-        }
-    }
 
-    public void navio3Canos(){
-        for(int i=1;i<4;i++){
-            System.out.println("N");
-        }
-    }
-
-    public char navio2Canos(){
-        return 'N';
-        }
-
-    public char navio1Cano(){
+    public char navio(){
         return 'N';
     }
+
+   // public void navio4Canos(){
+   //     for(int i=1;i<5;i++){
+   //         System.out.println("N");
+  //      }
+  // }
+
+   // public void navio3Canos(){
+   //     for(int i=1;i<4;i++){
+   //         System.out.println("N");
+   //     }
+  //  }
+
+   // public char navio2Canos(){
+   //     return 'N';
+   //     }
+
+
     public int getQuantAvioes() {
         return quantAvioes;
     }
