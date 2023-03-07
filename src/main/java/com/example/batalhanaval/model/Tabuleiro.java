@@ -174,7 +174,7 @@ public class Tabuleiro extends Navios{
         player.setGanhou(true);
     }
 
-    public char[][] getDimensoes() {
+    /*public char[][] getDimensoes() {
         return dimensoes;
     }
     public int[] getLinhaA() {
@@ -190,7 +190,7 @@ public class Tabuleiro extends Navios{
     }
     public char[][] dimensoes() {
         return dimensoes;
-    }
+    }*/
 
 
 }

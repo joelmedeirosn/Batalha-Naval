@@ -24,19 +24,19 @@ public class Player {
 
     }
 
-    public String getPlayerName() {
+   /* public String getPlayerName() {
         return playerName;
     }
 
     public boolean isGanhou() {
         return ganhou;
-    }
+    }*/
 
     public void setGanhou(boolean ganhou) {
         this.ganhou = ganhou;
     }
 
-    public boolean isNavioCustom() {
+    /*public boolean isNavioCustom() {
         return navioCustom;
     }
 
@@ -58,6 +58,6 @@ public class Player {
 
     public void setQuantAtaques(int quantAtaques) {
         this.quantAtaques = quantAtaques;
-    }
+    }*/
 }
 
