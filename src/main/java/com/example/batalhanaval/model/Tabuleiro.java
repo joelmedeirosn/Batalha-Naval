@@ -1,15 +1,17 @@
 package com.example.batalhanaval.model;
 
+import java.util.Arrays;
 import java.util.Scanner;
 import java.lang.*;
 
 public class Tabuleiro extends Navios{
     Player player;
     private char[][] dimensoes = new char[10][10];
-    private int[] linhaA = new int[10];
-    private int[] linhaD = new int[10];
-    private int[] colunaA = new int [10];
-    private int[] colunaD = new int [10];
+
+    private int[] linhaA = new int [3];
+    private int[] linhaD = new int [(getQuant1Cano() + getQuant2Canos() + getQuant3Canos() + getQuant4Canos() + getQuantAvioes())];
+    private int[] colunaA = new int [3];
+    private int[] colunaD = new int [(getQuant1Cano() + getQuant2Canos() + getQuant3Canos() + getQuant4Canos() + getQuantAvioes())];
 
     public Tabuleiro(Player player, int quant1Cano, int quant2Canos, int quant3Canos, int quant4Canos, int quantAvioes) {
         super(quant1Cano,quant2Canos,quant3Canos,quant4Canos,quantAvioes);
@@ -22,31 +24,46 @@ public class Tabuleiro extends Navios{
     }
 
     public void defender(Tabuleiro x){ //falta implementar cada tipo de navio no tabuleiro
-        linhaD[0] = 0;
-        colunaD[0] = 0;
+
         Scanner scanner = new Scanner(System.in);
-
-        for(int i = 0; i < (getQuant1Cano() + getQuant2Canos() + getQuant3Canos() + getQuant4Canos() + getQuantAvioes());i++){
-
-            System.out.println("Selecione a Linha");
-            System.out.println("1, 2, 3, 4, 5, 6, 7, 8, 9 ou 10:");
+        for(int i = 0; i < getQuant1Cano();i++){
+                System.out.println("Selecione a Linha do navio de 1 cano #"+ (i + 1) +": ");
+                linhaD[i] = (scanner.nextInt() - 1);
+                while(linhaD[i] > 9 || linhaD[i] < 0){
+                    System.out.println("Selecione uma Linha válida");
+                    linhaD[i] = (scanner.nextInt() - 1);
+                }
+                System.out.println("Selecione a Coluna do navio de 1 cano #"+ (i + 1) +": ");
+                colunaD[i] = (scanner.nextInt() - 1);
+                while(colunaD[i] > 9 || colunaD[i] < 0){
+                    System.out.println("Selecione uma Coluna válida");
+                    colunaD[i] = (scanner.nextInt() - 1);
+                }
+        }
+        for (int i = getQuant1Cano(); i < (getQuant1Cano() + getQuant2Canos());i++){
+            System.out.println("Selecione a Linha do navio de 2 canos #"+ (i-(getQuant1Cano() - 1 )) +" ");
             linhaD[i] = (scanner.nextInt() - 1);
             while(linhaD[i] > 9 || linhaD[i] < 0){
-            System.out.println("Selecione uma Linha válida");
-            System.out.println("1, 2, 3, 4, 5, 6, 7, 8, 9 ou 10:");
-            linhaD[i] = (scanner.nextInt() - 1);
+                System.out.println("Selecione uma Linha válida");
+                linhaD[i] = (scanner.nextInt() - 1);
             }
-            System.out.println("Selecione a Coluna");
-            System.out.println("1, 2, 3, 4, 5, 6, 7, 8, 9 ou 10:");
+            System.out.println("Selecione a Coluna do navio de 2 canos #"+ (i-(getQuant1Cano() - 1 )) +" ");
             colunaD[i] = (scanner.nextInt() - 1);
-            while(colunaD[i] > 9 || colunaD[i] < 0){
-            System.out.println("Selecione uma Coluna válida");
-            System.out.println("1, 2, 3, 4, 5, 6, 7, 8, 9 ou 10:");
-            colunaD[i] = (scanner.nextInt() - 1);
+            while(colunaD[i] > 8 || colunaD[i] < 0){
+                System.out.println("Os Navios de 2 Canos devem ter suas colunas definidas entre 1 e 9");
+                System.out.println("Selecione uma Coluna válida");
+                colunaD[i] = (scanner.nextInt() - 1);
             }
         }
-        for(int i = 0; i< x.dimensoes.length; i++){
-            x.dimensoes[linhaD[i]][colunaD[i]] = 'N';
+
+        for(int i = 0; i < (getQuant1Cano()); i++) {
+            // n esquecer -> x.dimensoes.length
+            x.dimensoes[linhaD[i]][colunaD[i]] = navio1Cano();
+        }
+        for(int i = (getQuant1Cano()); i < (getQuant2Canos() - 1); i++) {
+            // n esquecer -> x.dimensoes.length
+            x.dimensoes[linhaD[i]][colunaD[i]] = navio1Cano();
+            x.dimensoes[linhaD[i]][colunaD[i+1]] = navio1Cano();
         }
         for(int i = 0; i< x.dimensoes.length; i++){
             for(int j = 0; j< x.dimensoes.length; j++){
@@ -58,12 +75,9 @@ public class Tabuleiro extends Navios{
 
     public void atacarNavio(Tabuleiro x){
 
-        linhaA[0] = 0;
-        colunaA[0] = 0;
         Scanner scanner = new Scanner(System.in);
-        while(getQuant1Cano()!=0 || getQuant2Canos()!=0 || getQuant3Canos()!=0 || getQuant4Canos()!=0 || getQuantAvioes()!=0){
+        //while(getQuant1Cano()!=0 || getQuant2Canos()!=0 || getQuant3Canos()!=0 || getQuant4Canos()!=0 || getQuantAvioes()!=0){
             for(int i = 0; i < 3;i++){
-
                 System.out.println("Selecione a Linha, ");
                 System.out.println("1, 2, 3, 4, 5, 6, 7, 8, 9 ou 10:");
                 linhaA[i] = (scanner.nextInt() - 1);
@@ -80,19 +94,21 @@ public class Tabuleiro extends Navios{
                     System.out.println("1, 2, 3, 4, 5, 6, 7, 8, 9 ou 10:");
                     colunaA[i] = (scanner.nextInt() - 1);
                 }
-
             }
-            for(int i = 0; i< x.dimensoes.length; i++) {
-                x.dimensoes[linhaA[i]][colunaA[i]] = 'A';
+            for(int i = 0; i < 3; i++) { //n esquece brother -> x.dimensoes.length
+                if (x.dimensoes[linhaA[i]][colunaA[i]] == 'N' || x.dimensoes[linhaA[i]][colunaA[i]] == 'P'){
+                    x.dimensoes[linhaA[i]][colunaA[i]] = 'X';  // Checa o acerto do tiro e substitui o valor do navio acertado por "X"
+                } else {
+                    x.dimensoes[linhaA[i]][colunaA[i]] = 'A'; // Atribui o valor "A" para o ataque errado
+                }
             }
             for(int i = 0; i< x.dimensoes.length; i++) {
                 for(int j = 0; j< x.dimensoes.length; j++){
                     System.out.print(x.dimensoes[i][j]);
                 }
-
                 System.out.println();
             }
-        }
+        //}
         player.setGanhou(true);
     }
 

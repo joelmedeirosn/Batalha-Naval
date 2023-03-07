@@ -29,9 +29,7 @@ public class Navios{
                 }
             }
             System.out.println();
-
         }
-
     }
     public void navio4Canos(){
         for(int i=1;i<5;i++){
@@ -45,14 +43,12 @@ public class Navios{
         }
     }
 
-    public void navio2Canos(){
-        for(int i=1;i<3;i++){
-            System.out.println("N");
+    public char navio2Canos(){
+        return 'N';
         }
-    }
 
-    public void navio1Cano(){
-        System.out.println("N");
+    public char navio1Cano(){
+        return 'N';
     }
     public int getQuantAvioes() {
         return quantAvioes;

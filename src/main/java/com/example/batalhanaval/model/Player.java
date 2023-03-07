@@ -9,9 +9,7 @@ public class Player {
     private double timer; // tempo que o player demora pra jogar.
     private int quantAtaques; // quantidade de ataques do jogador.
 
-    public Player(String playerName){
-        this.playerName = playerName;
-
+    public Player(){
     }
 
     public void setPlayerName(){
