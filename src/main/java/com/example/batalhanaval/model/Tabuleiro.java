@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 import java.lang.*;
 
-public class Tabuleiro extends Navios{
+public class Tabuleiro extends Navios{ //teste
     Player player;
     private char[][] dimensoes = new char[10][10];
 
